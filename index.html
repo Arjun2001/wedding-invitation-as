@@ -365,7 +365,7 @@ footer{background:var(--wine);color:rgba(251,246,238,.5);text-align:center;font-
   <p class="venue-line">LILAC HOTEL · GURUVAYUR · KERALA</p>
 
   <div class="arch">
-    <img src="https://res.cloudinary.com/jwzm0f1g/image/upload/f_auto,q_auto,w_900/IMG_5263.jpg" onerror="imgFail(this)" alt="SamVel and Aparna together">
+    <img src="https://res.cloudinary.com/jwzm0f1g/image/upload/v1783345191/hero-banner.jpg" onerror="imgFail(this)" alt="SamVel and Aparna together">
     <span class="tag">Two hearts · One journey</span>
   </div>
 
@@ -482,6 +482,89 @@ footer{background:var(--wine);color:rgba(251,246,238,.5);text-align:center;font-
   <p class="thanks reveal d2">Your presence and well wishes mean the world to us. Thank you for sharing our special days.</p>
 </section>
 
+<!-- THANK YOU -->
+<section id="thankyou" style="
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 5rem 1.5rem;
+">
+  <!-- full-bleed photo -->
+  <img
+    src="https://res.cloudinary.com/jwzm0f1g/image/upload/v1783345901/thank-you.jpg"
+    alt="Thank you"
+    loading="lazy"
+    style="
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 0;
+    "
+  >
+  <!-- dark overlay -->
+  <div style="
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(58,13,24,.55) 0%, rgba(58,13,24,.72) 100%);
+    z-index: 1;
+  "></div>
+
+  <!-- content -->
+  <div style="position: relative; z-index: 2; max-width: 520px; margin: 0 auto;">
+    <!-- ornament -->
+    <svg width="40" height="24" viewBox="0 0 100 40" fill="none" style="margin-bottom:1.4rem">
+      <line x1="0" y1="20" x2="38" y2="20" stroke="#d8b25c" stroke-width="1.2"/>
+      <circle cx="50" cy="20" r="7" stroke="#d8b25c" stroke-width="1.2"/>
+      <line x1="62" y1="20" x2="100" y2="20" stroke="#d8b25c" stroke-width="1.2"/>
+    </svg>
+
+    <h2 style="
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 12vw, 5.5rem);
+      font-weight: 500;
+      font-style: italic;
+      color: #fbf6ee;
+      letter-spacing: .04em;
+      line-height: 1.1;
+      margin: 0 0 1.2rem;
+    ">Thank you</h2>
+
+    <p style="
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 3.6vw, 1.2rem);
+      font-style: italic;
+      color: rgba(251,246,238,.85);
+      line-height: 1.8;
+      max-width: 400px;
+      margin: 0 auto 2rem;
+    ">
+      Your presence and well wishes mean the world to us.<br>
+      Thank you for sharing our special day.
+    </p>
+
+    <!-- name divider -->
+    <div style="display:flex; align-items:center; justify-content:center; gap:.9rem;">
+      <div style="width:44px; height:1px; background:#d8b25c;"></div>
+      <span style="
+        font-family: 'Cormorant Garamond', serif;
+        font-size: .78rem;
+        letter-spacing: .3em;
+        color: #d8b25c;
+        text-transform: uppercase;
+      ">SamVel &amp; Aparna</span>
+      <div style="width:44px; height:1px; background:#d8b25c;"></div>
+    </div>
+  </div>
+</section>
+<!-- END THANK YOU -->
+
 <footer>Made with love for our family &amp; friends · <a href="tel:+919999999999" style="color:var(--gold-hi)">Call us</a></footer>
 
 <div class="sticky" id="sticky" role="complementary" aria-label="Next event">
@@ -508,7 +591,7 @@ const pad=n=>String(n).padStart(2,"0");
    upload it to Cloudinary and paste its URL below, e.g.
    const SONG_URL="https://res.cloudinary.com/jwzm0f1g/video/upload/song.mp3";
    ===================================================== */
-const SONG_URL="";
+const SONG_URL="https://res.cloudinary.com/jwzm0f1g/video/upload/v1783346347/song.mp3";
 
 /* ---------- mandala petals (generated) ---------- */
 function petals(gid){
