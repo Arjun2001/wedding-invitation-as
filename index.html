@@ -418,12 +418,12 @@ footer{background:var(--wine);color:rgba(251,246,238,.5);text-align:center;font-
     <div class="person reveal">
       <div class="pframe"><img src="https://res.cloudinary.com/jwzm0f1g/image/upload/f_auto,q_auto,w_700/bride-p.JPEG" onerror="imgFail(this)" alt="Aparna"></div>
       <h3>Aparna</h3>
-      <div class="tags"><span>#beautiful</span><span>#graceful</span><span>#bold</span><span>#thoughtful</span><span>#loving</span></div>
+      <div class="tags"><span>#MBA</span><span>#BusinessAnalyst</span><span>#fun</span><span>#loving</span><span>#bold</span><span>#thoughtful</span></div>
     </div>
     <div class="person reveal d1">
       <div class="pframe"><img src="https://res.cloudinary.com/jwzm0f1g/image/upload/f_auto,q_auto,w_700/groom-p.jpg" onerror="imgFail(this)" alt="SamVel"></div>
       <h3>SamVel</h3>
-      <div class="tags"><span>#charming</span><span>#dedicated</span><span>#kindhearted</span><span>#warm</span><span>#radiant</span></div>
+      <div class="tags"><span>#MechEngineer</span><span>#entrepreneur</span><span>#dedicated</span><span>#charming</span><span>#kindhearted</span></div>
     </div>
   </div>
 </section>
@@ -447,28 +447,13 @@ footer{background:var(--wine);color:rgba(251,246,238,.5);text-align:center;font-
     <svg class="flourish" viewBox="0 0 150 20"><path d="M5 10 H55 L65 3 L75 10 L65 17 Z M75 10 H145"/></svg>
   </div>
   <div class="sched reveal">
-    <div class="slot"><span class="t">10:30</span><span>Warm welcome</span></div>
-    <div class="slot"><span class="t">11:00</span><span>Wedding ceremony</span></div>
-    <div class="slot"><span class="t">12:30</span><span>Wedding feast — sadya</span></div>
-    <div class="slot"><span class="t">14:00</span><span>Celebrations &amp; dance</span></div>
+    <div class="slot"><span class="t">10:00</span><span>Warm welcome</span></div>
+    <div class="slot"><span class="t">10:30</span><span>Wedding Ceremony</span></div>
+    <div class="slot"><span class="t">12:00</span><span>Wedding feast — Sadhya</span></div>
+    <div class="slot"><span class="t">14:00</span><span>Celebrations</span></div>
   </div>
 </section>
 
-<!-- STORY -->
-<section>
-  <div class="section-head reveal">
-    <p class="eyebrow">How we got here</p>
-    <h2>Our Story</h2>
-    <svg class="flourish" viewBox="0 0 150 20"><path d="M5 10 H55 L65 3 L75 10 L65 17 Z M75 10 H145"/></svg>
-  </div>
-  <div class="story reveal">
-    <div class="chap"><span class="yr">2020</span><p><strong>First meeting.</strong> Introduced by a shared best friend.</p></div>
-    <div class="chap"><span class="yr">2021</span><p><strong>First date.</strong> Special memories; we grew closer.</p></div>
-    <div class="chap"><span class="yr">2022</span><p><strong>New chapter.</strong> Job changes kept us apart — but never far.</p></div>
-    <div class="chap"><span class="yr">2023</span><p><strong>Family bond.</strong> Our families met, and everything felt certain.</p></div>
-    <div class="chap"><span class="yr">2024</span><p><strong>The proposal.</strong> A promise sealed, a forever begun.</p></div>
-  </div>
-</section>
 
 <!-- GALLERY -->
 <section style="padding-left:0;padding-right:0">
@@ -619,15 +604,22 @@ $("ribbonTrack").innerHTML=(seg.repeat(4))+(seg.repeat(4));
 
 /* ---------- DATA ---------- */
 const EVENTS=[
-  {id:"haldi",tag:"Pre-wedding",name:"Haldi Ceremony",start:"2026-08-21T10:00:00+05:30",durH:2,dayLabel:"Friday 21 Aug",timeLabel:"10:00 AM",venue:"At Home",city:"Guruvayur",map:"https://maps.app.goo.gl/Y13o2yBMM8ZGbjmLA"},
-  {id:"sangeeth",tag:"Pre-wedding",name:"Sangeeth Night",start:"2026-08-21T18:00:00+05:30",durH:4,dayLabel:"Friday 21 Aug",timeLabel:"6:00 PM",venue:"At Home",city:"Guruvayur",map:"https://maps.app.goo.gl/Y13o2yBMM8ZGbjmLA"},
+  {id:"haldi",tag:"Pre-wedding",name:"Haldi Ceremony",start:"2026-08-21T10:00:00+05:30",durH:2,dayLabel:"Friday 21 Aug",timeLabel:"10:00 AM",venue:"At Home",city:"",map:"https://maps.app.goo.gl/Y13o2yBMM8ZGbjmLA"},
+  {id:"sangeeth",tag:"Pre-wedding",name:"Sangeeth Night",start:"2026-08-21T18:00:00+05:30",durH:4,dayLabel:"Friday 21 Aug",timeLabel:"6:00 PM",venue:"At Home",city:"",map:"https://maps.app.goo.gl/Y13o2yBMM8ZGbjmLA"},
   {id:"wedding",tag:"The big day",name:"Wedding Ceremony",start:"2026-08-23T10:30:00+05:30",durH:4,dayLabel:"Sunday 23 Aug",timeLabel:"10:30 AM",venue:"Lilac Hotel",city:"Guruvayur, Thrissur, Kerala",map:"https://maps.app.goo.gl/jCyyVrdJFAtT6ytPA"},
-  {id:"kerala-rec",tag:"Reception",name:"Kerala Reception",start:"2026-08-24T18:00:00+05:30",durH:4,dayLabel:"Monday 24 Aug",timeLabel:"6:00 PM",venue:"Regal Avenues Global",city:"Kerala",map:"https://maps.app.goo.gl/eygJ8JUPCfupoGbS9"},
-  {id:"chennai-rec",tag:"Reception",name:"Chennai Reception",start:"2026-08-30T19:00:00+05:30",durH:4,dayLabel:"Sunday 30 Aug",timeLabel:"7:00 PM",venue:"Radisson Blu Airport",city:"Chennai",map:"https://maps.app.goo.gl/Nr1wU7nUntdMK7m86"}
+  {id:"kerala-rec",tag:"Reception",name:"Kerala Reception",start:"2026-08-24T18:00:00+05:30",durH:4,dayLabel:"Monday 24 Aug",timeLabel:"6:00 PM",venue:"Regal Avenues",city:"Kakkur, Kerala",map:"https://maps.app.goo.gl/eygJ8JUPCfupoGbS9"},
+  {id:"chennai-rec",tag:"Reception",name:"Chennai Reception",start:"2026-08-30T19:00:00+05:30",durH:4,dayLabel:"Sunday 30 Aug",timeLabel:"7:00 PM",venue:"Radisson Blu",city:"Airport Road, Chennai",map:"https://maps.app.goo.gl/Nr1wU7nUntdMK7m86"}
 ];
-const PHOTOS=[["IMG_5711.jpg","Golden hour"],["IMG_6524.jpg","Just us"],["IMG_6590.JPG","Laughing again"],["IMG_6591.JPG","Always"],["MVN_30.JPEG","Frame-worthy"],["MVN_77.JPEG","Side by side"],["wedding.JPG","The promise"],["wedding1.JPG","Forever begins"]];
+const PHOTOS=[
+  ["https://res.cloudinary.com/jwzm0f1g/image/upload/v1783346069/family-bond.jpg",  "Family bond",   true],
+  ["https://res.cloudinary.com/jwzm0f1g/image/upload/v1783345893/wedding.jpg",       "Frame worthy",  true],
+  ["https://res.cloudinary.com/jwzm0f1g/image/upload/v1783345773/proposal.jpg",      "The promise",   true],
+  ["https://res.cloudinary.com/jwzm0f1g/image/upload/v1784695674/PHOTO-2026-07-22-08-50-32_2_j8sdxk.jpg", "Just us", true],
+  ["https://res.cloudinary.com/jwzm0f1g/image/upload/v1784695650/PHOTO-2026-07-22-08-50-32_df2rmc.jpg",    "Just us", true],
+  ["https://res.cloudinary.com/jwzm0f1g/image/upload/v1783345456/first-meet.jpg",    "Just us",       true]
+];
 const CLD="https://res.cloudinary.com/jwzm0f1g/image/upload/";
-const IMG=f=>CLD+"f_auto,q_auto,w_700/"+f; /* auto format + quality + resize = faster loads */
+const IMG=(f,full)=>full?f:CLD+"f_auto,q_auto,w_700/"+f;
 
 /* ---------- letters ---------- */
 ["n1","n2"].forEach((id,k)=>{
@@ -671,10 +663,10 @@ EVENTS.forEach(ev=>{
 });
 
 /* ---------- gallery ---------- */
-PHOTOS.forEach(([f,cap])=>{
+PHOTOS.forEach(([f,cap,full])=>{
   const d=document.createElement("figure");
   d.className="gframe";
-  d.innerHTML=`<img loading="lazy" decoding="async" src="${IMG(f)}" onerror="imgFail(this)" alt="SamVel & Aparna — ${cap}"><figcaption class="cap">${cap}</figcaption>`;
+  d.innerHTML=`<img loading="lazy" decoding="async" src="${IMG(f,full)}" onerror="imgFail(this)" alt="SamVel & Aparna — ${cap}"><figcaption class="cap">${cap}</figcaption>`;
   $("gallery").appendChild(d);
 });
 
