@@ -129,8 +129,8 @@ body.started .fab{opacity:1;pointer-events:auto;transition:opacity .6s .8s,trans
 .eyebrow{font-size:.72rem;letter-spacing:.38em;text-transform:uppercase;color:var(--blush);font-weight:500}
 .hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;
   font-size:clamp(3rem,12vw,5.6rem);line-height:1.02;margin:.8rem 0 .2rem;letter-spacing:.01em}
-.hero h1 .amp{font-style:italic;font-size:.5em;display:block;line-height:1.5;color:var(--blush);
-  -webkit-text-fill-color:var(--blush)}
+.hero h1 .amp{font-style:italic;font-size:.55em;display:inline;line-height:1.2;color:var(--blush);
+   font-weight:400;margin:0 .12em;letter-spacing:.02em;-webkit-text-fill-color:var(--blush)}
 .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.5em);
   animation:chIn .8s cubic-bezier(.2,.8,.2,1) forwards;animation-play-state:paused}
 body.started .hero h1 .ch{animation-play-state:running}
@@ -221,7 +221,7 @@ section{padding:3.6rem 1.4rem;position:relative;z-index:2}
 .pframe::before{content:"";position:absolute;inset:-12px;border:1px solid rgba(216,178,92,.45);
   border-radius:999px 999px 24px 24px}
 .person:hover .pframe{transform:translateY(-8px) rotate(-1.5deg)}
-.pframe img{width:100%;aspect-ratio:3/3.6;object-fit:cover;border-radius:992px 992px 12px 12px}
+.pframe img{width:100%;aspect-ratio:3/3.6;object-fit:cover;object-position:center 20%;border-radius:992px 992px 12px 12px}
 .person h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.8rem;color:var(--wine-2);margin-top:1.2rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin-top:.6rem}
 .tags span{font-size:.7rem;font-weight:500;letter-spacing:.06em;color:var(--wine-2);
@@ -371,7 +371,7 @@ footer{background:var(--wine);color:rgba(251,246,238,.5);text-align:center;font-
     <g id="pet"></g>
   </svg>
   <p class="eyebrow">Together with their families</p>
-  <h1 id="names" class="serif"><span class="gold-text" id="n1">SamVel</span><span class="amp">&amp;</span><span class="gold-text" id="n2">Aparna</span></h1>
+  <h1 id="names" class="serif"><span class="gold-text" id="n1">SamVel</span><span class="amp">&</span><span class="gold-text" id="n2">Aparna</span></h1>
   <p class="date">SUNDAY · 23 AUGUST 2026 · 10:30 AM</p>
   <p class="venue-line">LILAC HOTEL · GURUVAYUR · KERALA</p>
 
@@ -421,7 +421,7 @@ footer{background:var(--wine);color:rgba(251,246,238,.5);text-align:center;font-
       <div class="tags"><span>#MBA</span><span>#BusinessAnalyst</span><span>#fun</span><span>#loving</span><span>#bold</span><span>#thoughtful</span></div>
     </div>
     <div class="person reveal d1">
-      <div class="pframe"><img src="https://res.cloudinary.com/jwzm0f1g/image/upload/f_auto,q_auto,w_700/groom-p.jpg" onerror="imgFail(this)" alt="SamVel"></div>
+      <div class="pframe"><img src="https://res.cloudinary.com/jwzm0f1g/image/upload/v1785409047/PHOTO-2026-07-30-16-02-59_pcbdic.jpg" onerror="imgFail(this)" alt="SamVel"></div>
       <h3>SamVel</h3>
       <div class="tags"><span>#MechEngineer</span><span>#Entrepreneur</span><span>#dedicated</span><span>#charming</span><span>#kindhearted</span><span>#ambitious</span></div>
     </div>
@@ -835,8 +835,7 @@ function launchRocket(x){
     targetY:innerHeight*(0.22+Math.random()*0.2),color:FCOL[Math.random()*FCOL.length|0]});
 }
 function explode(x,y,color){
-  crackle(0,.28);
-  const n=46+Math.random()*22|0;
+   const n=46+Math.random()*22|0;
   for(let i=0;i<n;i++){
     const a=Math.PI*2*i/n+Math.random()*.2,sp=2.2+Math.random()*3.6;
     sparks.push({x,y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,
@@ -920,11 +919,12 @@ function startMusic(){
 function stopMusic(){song.pause();stopAmbient();musicOn=false;setMusicUI();}
 $("musicBtn").addEventListener("click",()=>{musicOn?stopMusic():startMusic();});
 $("sealBtn").addEventListener("click",()=>{
-  document.body.classList.add("started");
-  $("gate").classList.add("open");
-  try{ac();templeBell(0,1);templeBell(1.1,.7);}catch(e){} /* temple bells as the curtains part */
-  setTimeout(startMusic,600); /* instrumental fades in under the bells */
-  setTimeout(()=>celebrate(true),900);
+   document.body.classList.add("started");
+   $("gate").classList.add("open");
+   try{ac();templeBell(0,1);templeBell(1.1,.7);}catch(e){} /* temple bells as the curtains part */
+   setTimeout(startMusic,600); /* instrumental fades in under the bells */
+   setTimeout(()=>celebrate(true),900);
+   // celebrate is now crackling-free
 });
 setMusicUI();
 
