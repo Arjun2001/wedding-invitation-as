@@ -54,7 +54,7 @@ img{display:block;max-width:100%}
    background:linear-gradient(100deg,var(--gold-lo) 0%,var(--gold) 30%,var(--gold-hi) 48%,#FFF6D8 52%,var(--gold-hi) 56%,var(--gold) 70%,var(--gold-lo) 100%);
    background-size:220% 100%;
    -webkit-background-clip:text;background-clip:text;
-   -webkit-text-fill-color:transparent;color:var(--gold-hi);
+   -webkit-text-fill-color:var(--gold-hi);color:var(--gold-hi);
    animation:shine 6s linear infinite;
 }
 @keyframes shine{to{background-position:-220% 0}}
@@ -132,8 +132,8 @@ body.started .fab{opacity:1;pointer-events:auto;transition:opacity .6s .8s,trans
    font-size:clamp(2.4rem,8vw,5.6rem);line-height:1.2;margin:.8rem 0 .2rem;letter-spacing:.01em}
 .hero h1 .amp{font-style:normal;font-size:.55em;display:inline;line-height:1;color:var(--blush);
    font-weight:400;margin:0 .1em;letter-spacing:0;-webkit-text-fill-color:var(--blush);font-family:Georgia,serif}
-.hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.5em);
-  animation:chIn .8s cubic-bezier(.2,.8,.2,1) forwards;animation-play-state:paused}
+.hero h1 .ch{display:inline-block;opacity:1;transform:none;
+   animation:chIn .8s cubic-bezier(.2,.8,.2,1) forwards;animation-play-state:paused}
 body.started .hero h1 .ch{animation-play-state:running}
 @keyframes chIn{to{opacity:1;transform:none}}
 .hero .date{font-size:.95rem;letter-spacing:.26em;color:var(--ivory-2);margin-top:.7rem}
