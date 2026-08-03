@@ -51,10 +51,11 @@ img{display:block;max-width:100%}
 
 /* ===== GOLD SHIMMER TEXT ===== */
 .gold-text{
-  background:linear-gradient(100deg,var(--gold-lo) 0%,var(--gold) 30%,var(--gold-hi) 48%,#FFF6D8 52%,var(--gold-hi) 56%,var(--gold) 70%,var(--gold-lo) 100%);
-  background-size:220% 100%;
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  animation:shine 6s linear infinite;
+   background:linear-gradient(100deg,var(--gold-lo) 0%,var(--gold) 30%,var(--gold-hi) 48%,#FFF6D8 52%,var(--gold-hi) 56%,var(--gold) 70%,var(--gold-lo) 100%);
+   background-size:220% 100%;
+   -webkit-background-clip:text;background-clip:text;color:transparent;
+   animation:shine 6s linear infinite;
+   display:inline-block;
 }
 @keyframes shine{to{background-position:-220% 0}}
 
@@ -128,7 +129,7 @@ body.started .fab{opacity:1;pointer-events:auto;transition:opacity .6s .8s,trans
 .hero .mandala circle,.hero .mandala path{fill:none;stroke:var(--gold);stroke-width:1}
 .eyebrow{font-size:.72rem;letter-spacing:.38em;text-transform:uppercase;color:var(--blush);font-weight:500}
 .hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;
-   font-size:clamp(2.2rem,10vw,5.6rem);line-height:1.1;margin:.8rem 0 .2rem;letter-spacing:.01em;word-spacing:0.1em}
+   font-size:clamp(2rem,9vw,5.6rem);line-height:1.15;margin:.8rem 0 .2rem;letter-spacing:.01em;word-spacing:0.05em;display:flex;flex-wrap:wrap;justify-content:center;gap:.1em}
 .hero h1 .amp{font-style:normal;font-size:.6em;display:inline;line-height:1;color:var(--blush);
    font-weight:400;margin:0 .08em;letter-spacing:0;-webkit-text-fill-color:var(--blush);font-family:Georgia,serif}
 .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.5em);
@@ -221,7 +222,7 @@ section{padding:3.6rem 1.4rem;position:relative;z-index:2}
 .pframe::before{content:"";position:absolute;inset:-12px;border:1px solid rgba(216,178,92,.45);
   border-radius:999px 999px 24px 24px}
 .person:hover .pframe{transform:translateY(-8px) rotate(-1.5deg)}
-.pframe img{width:100%;aspect-ratio:3/3.6;object-fit:cover;object-position:center 35%;border-radius:992px 992px 12px 12px}
+.pframe img{width:100%;aspect-ratio:3/3.6;object-fit:cover;object-position:center 50%;border-radius:992px 992px 12px 12px}
 .person h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.8rem;color:var(--wine-2);margin-top:1.2rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin-top:.6rem}
 .tags span{font-size:.7rem;font-weight:500;letter-spacing:.06em;color:var(--wine-2);
